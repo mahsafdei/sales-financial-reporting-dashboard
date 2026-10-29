@@ -1,0 +1,32 @@
+DATA DICTIONARY
+
+orders.csv
+- OrderID: unique order-line identifier (duplicates were intentionally inserted for cleaning practice)
+- OrderDate: transaction date
+- CustomerID: customer key; a small number of blanks were intentionally inserted
+- ProductID: product key
+- Quantity: units sold; a small number of zero/negative values were intentionally inserted for data-quality investigation
+- UnitPrice: selling price before discount
+- DiscountPct: discount rate as decimal (0.10 = 10%)
+- SalesChannel: Online, Direct, or Partner
+
+customers.csv
+- CustomerID: customer key
+- CustomerName: customer display name
+- Segment: Consumer, Corporate, Small Business
+- City: customer city
+- Region: Ontario, Quebec, West, Atlantic
+
+products.csv
+- ProductID: product key
+- ProductName: product display name
+- Category: Office Supplies, Technology, Furniture
+- Subcategory: product subcategory
+- UnitCost: unit product cost
+- ListPrice: standard list price
+
+monthly_budget.csv
+- Month: first day of reporting month
+- Region: reporting region
+- RevenueBudget: monthly revenue budget
+- GrossProfitBudget: monthly gross profit budget
